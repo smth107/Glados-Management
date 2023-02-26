@@ -7,7 +7,11 @@ import time
 base_url = "https://glados.rocks/console/checkin"
 
 option = webdriver.ChromeOptions()
-# # option.add_argument('headless')  # 设置option
+option.add_argument('headless')  # 设置option
+option.add_argument("headless")
+option.add_argument('--no-sandbox')
+option.add_argument('--disable-gpu')
+option.add_argument('--disable-dev-shm-usage')
 driver = webdriver.Chrome(options=option)  # 调用带参数的谷歌浏览器
 
 
