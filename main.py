@@ -48,12 +48,12 @@ def checkin():
 
     # 更新cookies后进入目标网页
     driver.get(base_url)
-    time.sleep(1)
+    time.sleep(5)
     button = driver.find_element(By.TAG_NAME, "button")
     button.click()
     # print(button)
     time.sleep(5)
-    return driver.find_elements(By.CLASS_NAME, "content")[1].text
+    return driver.find_element(By.XPATH, "//div[@class='row']/p").text + '\n' + driver.find_elements(By.CLASS_NAME, "content")[1].text
 
 
 def pushMsg(content):
@@ -73,5 +73,6 @@ def pushMsg(content):
 if __name__ == "__main__":
     # getCookies()
     content = checkin()
+    # print(content)
     pushMsg(content)
     driver.quit()
