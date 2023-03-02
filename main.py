@@ -36,7 +36,7 @@ def checkin():
     # with open('glados_cookies.txt', 'r', encoding='utf8') as f:
     #     list_cookies = json.loads(f.read())
     list_cookies = json.loads(
-        '[{"domain": ".glados.rocks", "expiry": 1711869801, "httpOnly": false, "name": "_ga_CZFVKMNT9J", "path": "/", "sameSite": "Lax", "secure": false, "value": "GS1.1.1677309758.1.1.1677309801.0.0.0"}, {"domain": ".glados.rocks", "expiry": 1711869796, "httpOnly": false, "name": "_ga", "path": "/", "sameSite": "Lax", "secure": false, "value": "GA1.1.93515264.1677309759"}, {"domain": "glados.rocks", "expiry": 1703229796, "httpOnly": true, "name": "koa:sess.sig", "path": "/", "sameSite": "Lax", "secure": false, "value": "NH5jckGl82A43MQSUALgVkMZy4o"}, {"domain": "glados.rocks", "expiry": 1703229796, "httpOnly": true, "name": "koa:sess", "path": "/", "sameSite": "Lax", "secure": false, "value": "eyJ1c2VySWQiOjE2MDE3MSwiX2V4cGlyZSI6MTcwMzIyOTc2ODU2OCwiX21heEFnZSI6MjU5MjAwMDAwMDB9"}, {"domain": ".glados.rocks", "expiry": 1677396196, "httpOnly": false, "name": "_gid", "path": "/", "sameSite": "Lax", "secure": false, "value": "GA1.2.170384376.1677309759"}]')
+        '[{"domain": ".glados.rocks", "expiry": 1712306461, "httpOnly": false, "name": "_ga_CZFVKMNT9J", "path": "/", "sameSite": "Lax", "secure": false, "value": "GS1.1.1677746396.1.1.1677746461.0.0.0"}, {"domain": ".glados.rocks", "expiry": 1712306453, "httpOnly": false, "name": "_ga", "path": "/", "sameSite": "Lax", "secure": false, "value": "GA1.1.627916546.1677746397"}, {"domain": "glados.rocks", "expiry": 1703666453, "httpOnly": true, "name": "koa:sess.sig", "path": "/", "sameSite": "Lax", "secure": false, "value": "NFhonEsYiEGXM1KlnPTjfP4ZXr0"}, {"domain": "glados.rocks", "expiry": 1703666453, "httpOnly": true, "name": "koa:sess", "path": "/", "sameSite": "Lax", "secure": false, "value": "eyJ1c2VySWQiOjE2NDQyNywiX2V4cGlyZSI6MTcwMzY2NjQyNjk0MSwiX21heEFnZSI6MjU5MjAwMDAwMDB9"}, {"domain": ".glados.rocks", "expiry": 1677832853, "httpOnly": false, "name": "_gid", "path": "/", "sameSite": "Lax", "secure": false, "value": "GA1.2.1878525009.1677746397"}]')
     driver.get(base_url)
     for cookie in list_cookies:
         cookie_dict = {
@@ -61,7 +61,7 @@ def checkin():
 
 
 def pushMsg(content):
-    token = 'af422350f3084385b01043882d738b4e'  # 改成你的token
+    token = '471ae9ed66004d57aecea9c82d7d1806'  # 改成你的token
     title = 'glados每日签到'
     url = 'http://www.pushplus.plus/send'
     data = {
